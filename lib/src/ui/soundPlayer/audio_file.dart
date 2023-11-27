@@ -1,4 +1,4 @@
-import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audioplayers.dart' as audio;
 import 'package:flutter/cupertino.dart';
 import 'package:mathsgames/src/utility/Constants.dart';
 import 'package:flutter_vibrate/flutter_vibrate.dart';
@@ -6,15 +6,12 @@ import 'package:flutter_vibrate/flutter_vibrate.dart';
 class AudioPlayer {
   BuildContext? context;
 
-  AudioCache audioCache = new AudioCache();
-  late AudioPlayer audioPlayer;
-
+  audio.AudioCache audioCache = new audio.AudioCache();
 
   bool? _isSound = true;
   bool? _isVibrate = true;
 
   AudioPlayer(BuildContext context) {
-    audioPlayer = new AudioPlayer(context);
     this.context = context;
     setSound();
   }
@@ -45,7 +42,7 @@ class AudioPlayer {
   void playAudio(String s) async {
     if (_isSound!) {
       try {
-        audioPlayer.playAudio(s);
+        await audioCache.play(s);
       } on Exception catch (_) {}
     }
   }

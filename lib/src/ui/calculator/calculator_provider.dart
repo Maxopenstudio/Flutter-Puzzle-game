@@ -24,7 +24,7 @@ class CalculatorProvider extends GameProvider<Calculator> {
   bool isClick = false;
 
   void checkResult(String answer ) async {
-    AudioPlayer audioPlayer = new AudioPlayer(context!);
+    AudioPlayer audioPlayer = AudioPlayer(context!);
 
     if (result.length < currentState.answer.toString().length &&
         timerStatus != TimerStatus.pause) {

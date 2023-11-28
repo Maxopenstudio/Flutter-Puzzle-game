@@ -97,7 +97,8 @@ class _FeedbackScreen extends State<FeedbackScreen> {
 
                       final Email email = Email(
                         body: feedback,
-                        subject: 'App Feedback',
+                        subject: 'Maths Games feedback',
+                        recipients: ['contact@maxopen.com.ua'],
                         isHTML: false,
                       );
                       await FlutterEmailSender.send(email); // TODO: Подумать что сделать с отправкой отзывов

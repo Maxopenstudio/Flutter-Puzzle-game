@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/data/models/dashboard.dart';
 import 'package:tuple/tuple.dart';
 
@@ -90,8 +91,8 @@ class KeyUtil {
         colorTuple: Tuple2(Color(0xff4895EF), Color(0xff3f37c9)),
         opacity: 0.07,
         outlineIcon: AppAssets.icMathPuzzleOutline,
-        subtitle: "Each game with simple calculation with different approach.",
-        title: "Math Puzzle",
+        subtitle: S.current.mathPuzzleModeShortDesc,
+        title: S.current.mathPuzzleModeLabel,
         gridColor: bgColor1,
         fillIconColor: Color(0xff4895ef),
         position: 0,
@@ -108,9 +109,8 @@ class KeyUtil {
         opacity: 0.07,
         outlineIcon: AppAssets.icMemoryPuzzleOutline,
         gridColor: bgColor2,
-        subtitle:
-            "Memorise numbers & signs before applying calculation to them.",
-        title: "Memory Puzzle",
+        subtitle: S.current.memoryPuzzleModeShortDesc,
+        title: S.current.memoryPuzzleModeLabel,
         fillIconColor: Color(0xff9f2beb),
         outlineIconColor: Color(0xff560BAD),
         bgColor: bgColor2,
@@ -124,9 +124,8 @@ class KeyUtil {
         colorTuple: Tuple2(Color(0xfff72585), Color(0xffb5179e)),
         opacity: 0.12,
         outlineIcon: AppAssets.icTrainBrainOutline,
-        subtitle:
-            "Enhance logical thinking, concentration and core cognitive skills.",
-        title: "Train Your Brain",
+        subtitle: S.current.trainYourBrainModeShortDesc,
+        title: S.current.trainYourBrainModeLabel,
         folder: themeBlueFolder,
         fillIconColor: Color(0xfff72585),
         outlineIconColor: Color(0xffB5179E),
@@ -134,13 +133,12 @@ class KeyUtil {
         primaryColor: primaryColor3),
   ];
 
-
   static List<Color> bgColorList = [
     bgColor1,
     bgColor2,
     bgColor3,
-
   ];
+
   static int getTimeUtil(GameCategoryType gameCategoryType) {
     switch (gameCategoryType) {
       case GameCategoryType.CALCULATOR:

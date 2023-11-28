@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/app_assets.dart';
 import 'package:mathsgames/src/data/models/score_board.dart';
 import 'package:mathsgames/src/core/app_constant.dart';
@@ -32,7 +33,7 @@ class DashboardProvider extends CoinProvider {
       case PuzzleType.MATH_PUZZLE:
         list.add(GameCategory(
           1,
-          "Calculator",
+          S.current.mathPuzzleCategoryCalculator,
           keyCalculator,
           GameCategoryType.CALCULATOR,
           KeyUtil.calculator,
@@ -41,7 +42,7 @@ class DashboardProvider extends CoinProvider {
         ));
         list.add(GameCategory(
             2,
-            "Guess the sign?",
+            S.current.mathPuzzleCategoryGuessSign,
             keySign,
             GameCategoryType.GUESS_SIGN,
             KeyUtil.guessSign,
@@ -49,7 +50,7 @@ class DashboardProvider extends CoinProvider {
             AppAssets.icGuessTheSign));
         list.add(GameCategory(
           3,
-          "Correct answer",
+          S.current.mathPuzzleCategoryCorrectAnswer,
           keyCorrectAnswer,
           GameCategoryType.CORRECT_ANSWER,
           KeyUtil.correctAnswer,
@@ -58,7 +59,7 @@ class DashboardProvider extends CoinProvider {
         ));
         list.add(GameCategory(
           4,
-          "Quick calculation",
+          S.current.mathPuzzleCategoryQuickCalculation,
           keyQuickCalculation,
           GameCategoryType.QUICK_CALCULATION,
           KeyUtil.quickCalculation,
@@ -67,7 +68,7 @@ class DashboardProvider extends CoinProvider {
         ));
         list.add(GameCategory(
           5,
-          "Find Missing",
+          S.current.mathPuzzleCategoryFindMissing,
           keyFindMissingCalculation,
           GameCategoryType.FIND_MISSING,
           KeyUtil.findMissing,
@@ -77,7 +78,7 @@ class DashboardProvider extends CoinProvider {
 
         list.add(GameCategory(
           6,
-          "True False",
+          S.current.mathPuzzleCategoryTrueFalse,
           keyTrueFalseCalculation,
           GameCategoryType.TRUE_FALSE,
           KeyUtil.trueFalse,
@@ -87,7 +88,7 @@ class DashboardProvider extends CoinProvider {
 
         list.add(GameCategory(
           7,
-          "Complex Calculation",
+          S.current.mathPuzzleCategoryComplexCalculation,
           keyComplexGame,
           GameCategoryType.COMPLEX_CALCULATION,
           KeyUtil.complexCalculation,
@@ -97,7 +98,7 @@ class DashboardProvider extends CoinProvider {
 
         list.add(GameCategory(
           8,
-          "Dual Game",
+          S.current.mathPuzzleCategoryDualGame,
           keyDualGame,
           GameCategoryType.DUAL_GAME,
           KeyUtil.dualGame,
@@ -108,7 +109,7 @@ class DashboardProvider extends CoinProvider {
       case PuzzleType.MEMORY_PUZZLE:
         list.add(GameCategory(
           9,
-          "Mental arithmetic",
+          S.current.memoryPuzzleCategoryMentalArithmetic,
           keyMentalArithmetic,
           GameCategoryType.MENTAL_ARITHMETIC,
           KeyUtil.mentalArithmetic,
@@ -118,7 +119,7 @@ class DashboardProvider extends CoinProvider {
 
         list.add(GameCategory(
           10,
-          "Square root",
+          S.current.memoryPuzzleCategorySquareRoot,
           keySquareRoot,
           GameCategoryType.SQUARE_ROOT,
           KeyUtil.squareRoot,
@@ -127,7 +128,7 @@ class DashboardProvider extends CoinProvider {
         ));
         list.add(GameCategory(
           11,
-          "Math Grid",
+          S.current.memoryPuzzleCategoryMathGrid,
           keyMathMachine,
           GameCategoryType.MATH_GRID,
           KeyUtil.mathGrid,
@@ -136,7 +137,7 @@ class DashboardProvider extends CoinProvider {
         ));
         list.add(GameCategory(
           12,
-          "Mathematical pairs",
+          S.current.memoryPuzzleCategoryMathematicalPairs,
           keyMathPairs,
           GameCategoryType.MATH_PAIRS,
           KeyUtil.mathPairs,
@@ -146,7 +147,7 @@ class DashboardProvider extends CoinProvider {
 
         list.add(GameCategory(
           13,
-          "Cube Root",
+          S.current.memoryPuzzleCategoryCubeRoot,
           keyCubeRoot,
           GameCategoryType.CUBE_ROOT,
           KeyUtil.cubeRoot,
@@ -156,7 +157,7 @@ class DashboardProvider extends CoinProvider {
 
         list.add(GameCategory(
           14,
-          "Concentration",
+          S.current.memoryPuzzleCategoryConcentration,
           keyConcentration,
           GameCategoryType.CONCENTRATION,
           KeyUtil.concentration,
@@ -167,7 +168,7 @@ class DashboardProvider extends CoinProvider {
       case PuzzleType.BRAIN_PUZZLE:
         list.add(GameCategory(
           15,
-          "Magic triangle",
+          S.current.trainYourBrainMagicTriangle,
           keyMagicTriangle,
           GameCategoryType.MAGIC_TRIANGLE,
           KeyUtil.magicTriangle,
@@ -176,7 +177,7 @@ class DashboardProvider extends CoinProvider {
         ));
         list.add(GameCategory(
           16,
-          "Picture Puzzle",
+          S.current.trainYourBrainPicturePuzzle,
           keyPicturePuzzle,
           GameCategoryType.PICTURE_PUZZLE,
           KeyUtil.picturePuzzle,
@@ -185,7 +186,7 @@ class DashboardProvider extends CoinProvider {
         ));
         list.add(GameCategory(
           17,
-          "Number Pyramid",
+          S.current.trainYourBrainNumberPyramid,
           keyNumberPyramid,
           GameCategoryType.NUMBER_PYRAMID,
           KeyUtil.numberPyramid,
@@ -195,7 +196,7 @@ class DashboardProvider extends CoinProvider {
 
         list.add(GameCategory(
           18,
-          "Numeric Memory",
+          S.current.trainYourBrainNumericMemory,
           keyNumericMemory,
           GameCategoryType.NUMERIC_MEMORY,
           KeyUtil.numericMemory,

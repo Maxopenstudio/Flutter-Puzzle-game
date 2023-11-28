@@ -21,5 +21,57 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "gameNameLabel": MessageLookupByLibrary.simpleMessage("Math Games"),
+        "gameShortDescLabel": MessageLookupByLibrary.simpleMessage(
+            "Train Your Brain, Improve Your Math Skill"),
+        "mathPuzzleCategoryCalculator":
+            MessageLookupByLibrary.simpleMessage("Calculator"),
+        "mathPuzzleCategoryComplexCalculation":
+            MessageLookupByLibrary.simpleMessage("Complex Calculation"),
+        "mathPuzzleCategoryCorrectAnswer":
+            MessageLookupByLibrary.simpleMessage("Correct answer"),
+        "mathPuzzleCategoryDualGame":
+            MessageLookupByLibrary.simpleMessage("Dual Game"),
+        "mathPuzzleCategoryFindMissing":
+            MessageLookupByLibrary.simpleMessage("Find Missing"),
+        "mathPuzzleCategoryGuessSign":
+            MessageLookupByLibrary.simpleMessage("Guess the sign?"),
+        "mathPuzzleCategoryQuickCalculation":
+            MessageLookupByLibrary.simpleMessage("Quick calculation"),
+        "mathPuzzleCategoryTrueFalse":
+            MessageLookupByLibrary.simpleMessage("True False"),
+        "mathPuzzleModeLabel":
+            MessageLookupByLibrary.simpleMessage("Math Puzzle"),
+        "mathPuzzleModeShortDesc": MessageLookupByLibrary.simpleMessage(
+            "Each game with simple calculation with different approach."),
+        "memoryPuzzleCategoryConcentration":
+            MessageLookupByLibrary.simpleMessage("Concentration"),
+        "memoryPuzzleCategoryCubeRoot":
+            MessageLookupByLibrary.simpleMessage("Cube Root"),
+        "memoryPuzzleCategoryMathGrid":
+            MessageLookupByLibrary.simpleMessage("Math Grid"),
+        "memoryPuzzleCategoryMathematicalPairs":
+            MessageLookupByLibrary.simpleMessage("Mathematical pairs"),
+        "memoryPuzzleCategoryMentalArithmetic":
+            MessageLookupByLibrary.simpleMessage("Mental arithmetic"),
+        "memoryPuzzleCategorySquareRoot":
+            MessageLookupByLibrary.simpleMessage("Square root"),
+        "memoryPuzzleModeLabel":
+            MessageLookupByLibrary.simpleMessage("Memory Puzzle"),
+        "memoryPuzzleModeShortDesc": MessageLookupByLibrary.simpleMessage(
+            "Memorise numbers & signs before applying calculation to them."),
+        "trainYourBrainMagicTriangle":
+            MessageLookupByLibrary.simpleMessage("Magic triangle"),
+        "trainYourBrainModeLabel":
+            MessageLookupByLibrary.simpleMessage("Train Your Brain"),
+        "trainYourBrainModeShortDesc": MessageLookupByLibrary.simpleMessage(
+            "Enhance logical thinking, concentration and core cognitive skills."),
+        "trainYourBrainNumberPyramid":
+            MessageLookupByLibrary.simpleMessage("Number Pyramid"),
+        "trainYourBrainNumericMemory":
+            MessageLookupByLibrary.simpleMessage("Numeric Memory"),
+        "trainYourBrainPicturePuzzle":
+            MessageLookupByLibrary.simpleMessage("Picture Puzzle")
+      };
 }

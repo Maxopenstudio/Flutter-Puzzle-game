@@ -9,6 +9,7 @@ import 'package:mathsgames/src/utility/Constants.dart';
 import 'package:provider/provider.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../../generated/l10n.dart';
 import '../app/theme_provider.dart';
 import '../resizer/fetch_pixels.dart';
 
@@ -102,8 +103,8 @@ class _DashboardViewState extends State<DashboardView>
                         SizedBox(height: getVerticalSpace(context)),
                         // SizedBox(height: getScreenPercentSize(context, 3),),
 
-                        getHeaderWidget(context, 'Math Games',
-                            'Train Your Brain, Improve Your Math Skill'),
+                        getHeaderWidget(context, S.of(context).gameNameLabel,
+                            S.current.gameShortDescLabel),
 
                         // SizedBox(height: getScreenPercentSize(context, 5),),
                         SizedBox(height: FetchPixels.getPixelHeight(120)),

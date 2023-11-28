@@ -1,1 +1,31 @@
-{}
+{
+  "gameNameLabel": "Math Games",
+  "gameShortDescLabel": "Train Your Brain, Improve Your Math Skill",
+
+  "mathPuzzleModeLabel": "Math Puzzle",
+  "mathPuzzleModeShortDesc": "Each game with simple calculation with different approach.",
+  "mathPuzzleCategoryCalculator": "Calculator",
+  "mathPuzzleCategoryGuessSign": "Guess the sign?",
+  "mathPuzzleCategoryCorrectAnswer": "Correct answer",
+  "mathPuzzleCategoryQuickCalculation": "Quick calculation",
+  "mathPuzzleCategoryFindMissing": "Find Missing",
+  "mathPuzzleCategoryTrueFalse": "True False",
+  "mathPuzzleCategoryComplexCalculation": "Complex Calculation",
+  "mathPuzzleCategoryDualGame": "Dual Game",
+
+  "memoryPuzzleModeLabel": "Memory Puzzle",
+  "memoryPuzzleModeShortDesc": "Memorise numbers & signs before applying calculation to them.",
+  "memoryPuzzleCategoryMentalArithmetic": "Mental arithmetic",
+  "memoryPuzzleCategorySquareRoot": "Square root",
+  "memoryPuzzleCategoryMathGrid": "Math Grid",
+  "memoryPuzzleCategoryMathematicalPairs": "Mathematical pairs",
+  "memoryPuzzleCategoryCubeRoot": "Cube Root",
+  "memoryPuzzleCategoryConcentration": "Concentration",
+
+  "trainYourBrainModeLabel": "Train Your Brain",
+  "trainYourBrainModeShortDesc": "Enhance logical thinking, concentration and core cognitive skills.",
+  "trainYourBrainMagicTriangle": "Magic triangle",
+  "trainYourBrainPicturePuzzle": "Picture Puzzle",
+  "trainYourBrainNumberPyramid": "Number Pyramid",
+  "trainYourBrainNumericMemory": "Numeric Memory"
+}

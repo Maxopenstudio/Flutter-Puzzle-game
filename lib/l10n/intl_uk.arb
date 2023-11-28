@@ -1,0 +1,31 @@
+{
+  "gameNameLabel": "Math Games",
+  "gameShortDescLabel": "Тренуйте свій мозок, покращуйте математичні навички",
+
+  "mathPuzzleModeLabel": "Математична головоломка",
+  "mathPuzzleModeShortDesc": "Кожна гра з простими розрахунками з різним підходом.",
+  "mathPuzzleCategoryCalculator": "Калькулятор",
+  "mathPuzzleCategoryGuessSign": "Вгадаєш знак?",
+  "mathPuzzleCategoryCorrectAnswer": "Правильна відповідь",
+  "mathPuzzleCategoryQuickCalculation": "Швидкий розрахунок",
+  "mathPuzzleCategoryFindMissing": "Знайти невідоме",
+  "mathPuzzleCategoryTrueFalse": "Правда Неправда",
+  "mathPuzzleCategoryComplexCalculation": "Складні розрахунки",
+  "mathPuzzleCategoryDualGame": "Гра на двох",
+
+  "memoryPuzzleModeLabel": "Головоломка пам'яті",
+  "memoryPuzzleModeShortDesc": "Запам'ятовуйте числа та знаки, перш ніж застосовувати до них обчислення.",
+  "memoryPuzzleCategoryMentalArithmetic": "Ментальна арифметика",
+  "memoryPuzzleCategorySquareRoot": "Квадратний корінь",
+  "memoryPuzzleCategoryMathGrid": "Математична сітка",
+  "memoryPuzzleCategoryMathematicalPairs": "Математичні пари",
+  "memoryPuzzleCategoryCubeRoot": "Кубічний корінь",
+  "memoryPuzzleCategoryConcentration": "Концентрація",
+
+  "trainYourBrainModeLabel": "Тренуй свій мозок",
+  "trainYourBrainModeShortDesc": "Розвивайте логічне мислення, концентрацію уваги та основні когнітивні навички.",
+  "trainYourBrainMagicTriangle": "Магічний трикутник",
+  "trainYourBrainPicturePuzzle": "Головоломка з картинок",
+  "trainYourBrainNumberPyramid": "Числова піраміда",
+  "trainYourBrainNumericMemory": "Числова пам'ять"
+}

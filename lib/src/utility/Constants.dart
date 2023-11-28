@@ -967,7 +967,7 @@ String rightSound = 'right.mp3';
 String wrongSound = 'wrong.mp3';
 String gameOverSound = 'gameover.mp3';
 
-String privacyURL = 'https://google.com';
+String privacyURL = 'https://sites.google.com/view/mathgames-privacy/';
 
 setSound(bool rem) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();

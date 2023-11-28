@@ -70,8 +70,6 @@ class MagicTriangleView extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.only(
-                              bottom: getPercentSize(mainHeight, 9)),
                           child: Center(
                             child: Selector<MagicTriangleProvider, int>(
                                 selector: (p0, p1) => p1.currentState.answer,

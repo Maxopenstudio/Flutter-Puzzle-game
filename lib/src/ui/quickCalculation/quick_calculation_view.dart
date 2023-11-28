@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/data/models/quick_calculation.dart';
 import 'package:mathsgames/src/ui/common/common_back_button.dart';
 import 'package:mathsgames/src/ui/common/common_clear_button.dart';
@@ -468,7 +469,7 @@ class QuickCalculationView extends StatelessWidget {
                               String e = list[index];
                               if (e == "Clear") {
                                 return CommonClearButton(
-                                    text: "Clear",
+                                    text: S.current.clearCalculatorButton,
                                     height: height,
                                     onTab: () {
                                       context

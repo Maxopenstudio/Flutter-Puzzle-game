@@ -12,6 +12,7 @@ import 'package:provider/provider.dart';
 import 'package:tuple/tuple.dart';
 import 'package:vsync_provider/vsync_provider.dart';
 
+import '../../../generated/l10n.dart';
 import '../common/common_main_widget.dart';
 import '../common/common_number_button.dart';
 import 'number_pyramid_button.dart';
@@ -926,7 +927,7 @@ class NumberPyramidView extends StatelessWidget {
 
                             if (e == "Done") {
                               return CommonClearButton(
-                                  text: "Done",
+                                  text: S.current.doneButton,
                                   height: height,
                                   btnRadius: radius,
                                   onTab: () {

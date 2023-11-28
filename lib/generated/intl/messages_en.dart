@@ -25,11 +25,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "answerIsLabel": MessageLookupByLibrary.simpleMessage("Answer is :"),
         "cancelButtonLabel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "clearCalculatorButton": MessageLookupByLibrary.simpleMessage("Clear"),
+        "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
         "difficultyEasy": MessageLookupByLibrary.simpleMessage("Easy"),
         "difficultyHard": MessageLookupByLibrary.simpleMessage("Hard"),
         "difficultyHeaderLabel":
             MessageLookupByLibrary.simpleMessage("Select Difficulty"),
         "difficultyMedium": MessageLookupByLibrary.simpleMessage("Medium"),
+        "doneButton": MessageLookupByLibrary.simpleMessage("Done"),
         "dualQuiz": MessageLookupByLibrary.simpleMessage("Quiz"),
         "feedbackDescription": MessageLookupByLibrary.simpleMessage(
             "Give your feedback about our app"),

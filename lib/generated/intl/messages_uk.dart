@@ -25,11 +25,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "answerIsLabel": MessageLookupByLibrary.simpleMessage("Відповідь :"),
         "cancelButtonLabel": MessageLookupByLibrary.simpleMessage("Скасувати"),
         "clearCalculatorButton": MessageLookupByLibrary.simpleMessage("Стерти"),
+        "continueButton": MessageLookupByLibrary.simpleMessage("Продовжити"),
         "difficultyEasy": MessageLookupByLibrary.simpleMessage("Легкий"),
         "difficultyHard": MessageLookupByLibrary.simpleMessage("Складний"),
         "difficultyHeaderLabel":
             MessageLookupByLibrary.simpleMessage("Виберіть рівень складності"),
         "difficultyMedium": MessageLookupByLibrary.simpleMessage("Середній"),
+        "doneButton": MessageLookupByLibrary.simpleMessage("Готово"),
         "dualQuiz": MessageLookupByLibrary.simpleMessage("Питання"),
         "feedbackDescription": MessageLookupByLibrary.simpleMessage(
             "Залиште свій відгук про наш додаток"),

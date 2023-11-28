@@ -979,6 +979,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Continue`
+  String get continueButton {
+    return Intl.message(
+      'Continue',
+      name: 'continueButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Done`
+  String get doneButton {
+    return Intl.message(
+      'Done',
+      name: 'doneButton',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

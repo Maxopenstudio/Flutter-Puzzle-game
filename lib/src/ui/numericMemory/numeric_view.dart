@@ -31,7 +31,7 @@ class NumericMemoryView extends StatelessWidget {
     bool isContinue = false;
     double remainHeight = getRemainHeight(context: context);
     int _crossAxisCount = 3;
-    double height1 = getScreenPercentSize(context, 57);
+    double height1 = getScreenPercentSize(context, 54);
     double height = getPercentSize(remainHeight, 70) / 5;
 
     double _crossAxisSpacing = getPercentSize(height, 14);
@@ -132,9 +132,7 @@ class NumericMemoryView extends StatelessWidget {
                             Expanded(
                               flex: 1,
                               child: Container(
-                                // color: Colors.red,
-                                margin: EdgeInsets.only(
-                                    bottom: getPercentSize(mainHeight, 10)),
+
 
                                 child: Selector<NumericMemoryProvider,
                                         NumericMemoryPair>(

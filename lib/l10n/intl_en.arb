@@ -100,5 +100,7 @@
   "restartButton": "Restart",
   "dualQuiz": "Quiz",
   "playerOne": "Player 1",
-  "playerTwo": "Player 2"
+  "playerTwo": "Player 2",
+  "continueButton": "Continue",
+  "doneButton": "Done"
 }

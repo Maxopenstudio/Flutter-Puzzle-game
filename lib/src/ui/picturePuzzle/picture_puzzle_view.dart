@@ -14,6 +14,7 @@ import 'package:tuple/tuple.dart';
 import 'package:vsync_provider/vsync_provider.dart';
 import 'package:collection/collection.dart';
 
+import '../../../generated/l10n.dart';
 import '../../utility/Constants.dart';
 import '../common/common_main_widget.dart';
 import '../common/common_number_button.dart';
@@ -106,39 +107,42 @@ class PicturePuzzleView extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   SizedBox(
-                    height: getPercentSize(remainHeight, 2),
+                    height: getPercentSize(remainHeight, 6),
                   ),
                   Expanded(
                     flex: 1,
                     child: Selector<PicturePuzzleProvider, PicturePuzzle>(
                         selector: (p0, p1) => p1.currentState,
                         builder: (context, provider, child) {
-                          return Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: provider.list.mapIndexed((index, list) {
-                              return Expanded(
-                                flex: 1,
-                                child: Padding(
-                                  padding: EdgeInsets.symmetric(
-                                      horizontal: (margin * 2)),
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: list.shapeList.map((subList) {
-                                      return PicturePuzzleButton(
-                                        picturePuzzleShape: subList,
-                                        shapeColor:
-                                            colorTuple.item1.primaryColor!,
-                                        colorTuple: Tuple2(
-                                            colorTuple.item1.cellColor!,
-                                            colorTuple.item1.primaryColor!),
-                                      );
-                                    }).toList(),
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: provider.list.mapIndexed((index, list) {
+                                return Expanded(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: (margin * 2)),
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: list.shapeList.map((subList) {
+                                        return PicturePuzzleButton(
+                                          picturePuzzleShape: subList,
+                                          shapeColor:
+                                              colorTuple.item1.primaryColor!,
+                                          colorTuple: Tuple2(
+                                              colorTuple.item1.cellColor!,
+                                              colorTuple.item1.primaryColor!),
+                                        );
+                                      }).toList(),
+                                    ),
                                   ),
-                                ),
-                              );
-                            }).toList(),
+                                );
+                              }).toList(),
+                            ),
                           );
                         }),
                   ),
@@ -165,7 +169,7 @@ class PicturePuzzleView extends StatelessWidget {
                             String e = list[index];
                             if (e == "Clear") {
                               return CommonClearButton(
-                                  text: "Clear",
+                                  text: S.current.clearCalculatorButton,
                                   btnRadius: radius,
                                   height: height,
                                   onTab: () {

@@ -16,6 +16,7 @@ import 'package:provider/provider.dart';
 import 'package:tuple/tuple.dart';
 import 'package:vsync_provider/vsync_provider.dart';
 
+import '../../../generated/l10n.dart';
 import '../../utility/Constants.dart';
 import '../common/common_main_widget.dart';
 
@@ -46,8 +47,8 @@ class MentalArithmeticView extends StatelessWidget {
   Widget build(BuildContext context) {
     double remainHeight = getRemainHeight(context: context);
     int _crossAxisCount = 3;
-    double height1 = getScreenPercentSize(context, 57);
-    double height = getScreenPercentSize(context, 57) / 5.3;
+    double height1 = getScreenPercentSize(context, 52);
+    double height = getScreenPercentSize(context, 52) / 5.3;
 
     double _crossAxisSpacing = getPercentSize(height, 30);
     var widthItem = (getWidthPercentSize(context, 100) -
@@ -92,10 +93,6 @@ class MentalArithmeticView extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          // color: Colors.red,
-                          margin: EdgeInsets.only(
-                              bottom: getPercentSize(mainHeight, 0)),
-
                           child: Selector<MentalArithmeticProvider,
                                   MentalArithmetic>(
                               selector: (p0, p1) => p1.currentState,
@@ -130,7 +127,7 @@ class MentalArithmeticView extends StatelessWidget {
                               String e = list[index];
                               if (e == "Clear") {
                                 return CommonClearButton(
-                                    text: "Clear",
+                                    text: S.current.clearCalculatorButton,
                                     height: height,
                                     onTab: () {
                                       context

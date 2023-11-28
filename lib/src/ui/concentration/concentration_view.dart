@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/app_constant.dart';
 import 'package:mathsgames/src/ui/common/common_app_bar.dart';
 import 'package:mathsgames/src/ui/common/common_info_text_view.dart';
@@ -199,7 +200,7 @@ class ConcentrationView extends StatelessWidget {
                           child: Container(
                             margin: EdgeInsets.symmetric(
                                 horizontal: (getHorizontalSpace(context))),
-                            child: getButtonWidget(context, "Continue",
+                            child: getButtonWidget(context, S.current.continueButton,
                                 colorTuple.item1.primaryColor, () {
                               setState(() {
                                 isContinue = true;

@@ -100,5 +100,7 @@
   "restartButton": "Рестарт",
   "dualQuiz": "Питання",
   "playerOne": "Гравець 1",
-  "playerTwo": "Гравець 2"
+  "playerTwo": "Гравець 2",
+  "continueButton": "Продовжити",
+  "doneButton": "Готово"
 }

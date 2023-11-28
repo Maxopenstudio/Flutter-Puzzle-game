@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/app_constant.dart';
 import 'package:tuple/tuple.dart';
 
@@ -57,7 +58,7 @@ class RateViewDialog extends StatelessWidget {
                   .textTheme
                   .bodyText1!
                   .copyWith(fontWeight: FontWeight.bold),
-              "Give Your Opinion",
+              S.current.rateGiveYourOpinion,
               TextAlign.center,
               getScreenPercentSize(context, 2.5)),
 
@@ -67,7 +68,7 @@ class RateViewDialog extends StatelessWidget {
               Theme.of(context).textTheme.bodyText1!.copyWith(
                     fontWeight: FontWeight.w400,
                   ),
-              "Make better math goal for you,and would love to know how would rate our app?",
+              S.current.rateGiveYourOpinionDescription,
               TextAlign.center,
               getScreenPercentSize(context, 1.8)),
 
@@ -101,7 +102,7 @@ class RateViewDialog extends StatelessWidget {
             children: [
               Expanded(
                 child: getButtonWidget(
-                    context, "Cancel", colorTuple.item1.primaryColor, () {
+                    context, S.current.rateCancelButton, colorTuple.item1.primaryColor, () {
                   Navigator.pop(context);
                 }, textColor: darken(KeyUtil.primaryColor1), isBorder: true),
                 flex: 1,
@@ -111,7 +112,7 @@ class RateViewDialog extends StatelessWidget {
               ),
               Expanded(
                 child: getButtonWidget(
-                    context, "Submit", darken(colorTuple.item1.primaryColor!),
+                    context, S.current.rateSubmitButton, darken(colorTuple.item1.primaryColor!),
                     () async {
                   if (rate >= 3) {
                     Navigator.pop(context);

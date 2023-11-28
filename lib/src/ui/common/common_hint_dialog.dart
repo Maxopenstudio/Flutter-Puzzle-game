@@ -5,6 +5,7 @@ import 'package:mathsgames/src/ui/resizer/widget_utils.dart';
 import 'package:mathsgames/src/utility/Constants.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../../generated/l10n.dart';
 import '../../ads/AdsFile.dart';
 import '../../core/app_assets.dart';
 import '../app/game_provider.dart';
@@ -44,7 +45,7 @@ class CommonHintDialog extends StatelessWidget {
                           .textTheme
                           .bodyText1!
                           .copyWith(fontWeight: FontWeight.bold),
-                      isHint ? '' : 'Hint',
+                      isHint ? '' : S.current.hintHeaderLabel,
                       TextAlign.center,
                       getScreenPercentSize(context, 3)),
                 ),
@@ -80,7 +81,7 @@ class CommonHintDialog extends StatelessWidget {
                                     .textTheme
                                     .subtitle1!
                                     .copyWith(fontWeight: FontWeight.w400),
-                                'Answer is :',
+                                S.current.answerIsLabel,
                                 TextAlign.center,
                                 getScreenPercentSize(context, 2),
                                 4),
@@ -99,7 +100,7 @@ class CommonHintDialog extends StatelessWidget {
                       ),
                       SizedBox(height: getScreenPercentSize(context, 5)),
                       getButtonWidget(
-                          context, "Ok", colorTuple.item1.primaryColor, () {
+                          context, S.current.okButtonLabel, colorTuple.item1.primaryColor, () {
                         Navigator.pop(context);
                       }, textColor: Colors.black),
                     ],
@@ -108,7 +109,7 @@ class CommonHintDialog extends StatelessWidget {
                     children: [
                       Opacity(
                         opacity: provider.isRewardedComplete ? 0.5 : 1,
-                        child: getButtonWidget(context, "Watch Video",
+                        child: getButtonWidget(context, S.current.hintWatchVideoButtonLabel,
                             colorTuple.item1.primaryColor, () {
                           if (!provider.isRewardedComplete) {
                             showRewardedAd(provider.adsFile, () {
@@ -124,7 +125,7 @@ class CommonHintDialog extends StatelessWidget {
                       ),
                       SizedBox(height: getScreenPercentSize(context, 0.2)),
                       getHintButtonWidget(
-                          context, "Coin", colorTuple.item1.primaryColor, () {
+                          context, S.current.hintByCoinButtonLabel, colorTuple.item1.primaryColor, () {
                         if (provider.coin >= hintCoin) {
                           setState(() {
                             isHint = true;
@@ -132,7 +133,7 @@ class CommonHintDialog extends StatelessWidget {
 
                           provider.minusCoin(useCoin: hintCoin);
                         } else {
-                          showCustomToast('Coin not available', context);
+                          showCustomToast(S.current.hintByCoinNoHaveCoins, context);
                         }
                       }, textColor: Colors.black),
                     ],

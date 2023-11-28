@@ -12,6 +12,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../generated/l10n.dart';
 import '../core/app_assets.dart';
 import '../ui/app/svg_modify.dart';
 import '../ui/dashboard/dashboard_provider.dart';
@@ -900,7 +901,7 @@ Widget getHintButtonWidget(
                       Theme.of(context).textTheme.bodyText1!.copyWith(
                           fontWeight: FontWeight.w500,
                           color: textColor == null ? Colors.white : textColor),
-                      'Use 10 coin',
+                      S.current.hintByCoinDescrLabel,
                       TextAlign.center,
                       (fontSize / 1.2))
                 ],

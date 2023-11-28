@@ -22,9 +22,46 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "answerIsLabel": MessageLookupByLibrary.simpleMessage("Відповідь :"),
+        "cancelButtonLabel": MessageLookupByLibrary.simpleMessage("Скасувати"),
+        "clearCalculatorButton": MessageLookupByLibrary.simpleMessage("Стерти"),
+        "difficultyEasy": MessageLookupByLibrary.simpleMessage("Легкий"),
+        "difficultyHard": MessageLookupByLibrary.simpleMessage("Складний"),
+        "difficultyHeaderLabel":
+            MessageLookupByLibrary.simpleMessage("Виберіть рівень складності"),
+        "difficultyMedium": MessageLookupByLibrary.simpleMessage("Середній"),
+        "dualQuiz": MessageLookupByLibrary.simpleMessage("Питання"),
+        "feedbackDescription": MessageLookupByLibrary.simpleMessage(
+            "Залиште свій відгук про наш додаток"),
+        "feedbackHeader":
+            MessageLookupByLibrary.simpleMessage("Залиште відгук"),
+        "feedbackImproved": MessageLookupByLibrary.simpleMessage(
+            "Скажіть нам, що можна покращити!"),
+        "feedbackRatingQuestion":
+            MessageLookupByLibrary.simpleMessage("Ви задоволені цим додатком?"),
+        "feedbackSubmitButton":
+            MessageLookupByLibrary.simpleMessage("Надіслати відгук"),
+        "feedbackWrite":
+            MessageLookupByLibrary.simpleMessage("Напишіть свій відгук..."),
+        "forCorrectAnswer":
+            MessageLookupByLibrary.simpleMessage("за правильну відповідь"),
+        "forWrongAnswer":
+            MessageLookupByLibrary.simpleMessage("за неправильну відповідь"),
+        "gameLevelLabel": MessageLookupByLibrary.simpleMessage("Рівень"),
         "gameNameLabel": MessageLookupByLibrary.simpleMessage("Math Games"),
+        "gameOverLabel":
+            MessageLookupByLibrary.simpleMessage("Гра закінчена!!!"),
         "gameShortDescLabel": MessageLookupByLibrary.simpleMessage(
             "Тренуйте свій мозок, покращуйте математичні навички"),
+        "goButtonLabel": MessageLookupByLibrary.simpleMessage("Почати"),
+        "hintByCoinButtonLabel": MessageLookupByLibrary.simpleMessage("Монети"),
+        "hintByCoinDescrLabel":
+            MessageLookupByLibrary.simpleMessage("Використати 10 монет"),
+        "hintByCoinNoHaveCoins":
+            MessageLookupByLibrary.simpleMessage("Не вистачає монет"),
+        "hintHeaderLabel": MessageLookupByLibrary.simpleMessage("Підказка"),
+        "hintWatchVideoButtonLabel":
+            MessageLookupByLibrary.simpleMessage("Дивитись відео"),
         "mathPuzzleCategoryCalculator":
             MessageLookupByLibrary.simpleMessage("Калькулятор"),
         "mathPuzzleCategoryCalculatorInfo":
@@ -99,6 +136,37 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Головоломка пам\'яті"),
         "memoryPuzzleModeShortDesc": MessageLookupByLibrary.simpleMessage(
             "Запам\'ятовуйте числа та знаки перед їх обчисленням."),
+        "noButtonLabel": MessageLookupByLibrary.simpleMessage("Ні"),
+        "okButtonLabel": MessageLookupByLibrary.simpleMessage("Oк"),
+        "playButtonLabel": MessageLookupByLibrary.simpleMessage("Почати"),
+        "playerOne": MessageLookupByLibrary.simpleMessage("Гравець 1"),
+        "playerTwo": MessageLookupByLibrary.simpleMessage("Гравець 2"),
+        "quitLevelDescription": MessageLookupByLibrary.simpleMessage(
+            "Ви впевнені, що хочете покинути рівень?"),
+        "quitLevelHeaderLabel":
+            MessageLookupByLibrary.simpleMessage("Вийти!!!"),
+        "rateCancelButton": MessageLookupByLibrary.simpleMessage("Скасувати"),
+        "rateGiveYourOpinion":
+            MessageLookupByLibrary.simpleMessage("Висловіть свою думку"),
+        "rateGiveYourOpinionDescription": MessageLookupByLibrary.simpleMessage(
+            "Зробимо задачі краще. Ми хотіли б дізнатися, як ви оцінюєте наш додаток?"),
+        "rateSubmitButton": MessageLookupByLibrary.simpleMessage("Надіслати"),
+        "restartButton": MessageLookupByLibrary.simpleMessage("Рестарт"),
+        "resumeButtonLabel": MessageLookupByLibrary.simpleMessage("Продовжити"),
+        "settingsFeedback":
+            MessageLookupByLibrary.simpleMessage("Зворотній зв\'язок"),
+        "settingsHeaderLabel":
+            MessageLookupByLibrary.simpleMessage("Налаштування"),
+        "settingsPrivacyPolicy":
+            MessageLookupByLibrary.simpleMessage("Політика конфіденційності"),
+        "settingsRateUs": MessageLookupByLibrary.simpleMessage("Оцінити нас"),
+        "settingsShare": MessageLookupByLibrary.simpleMessage("Поділитися"),
+        "settingsSoundLabel": MessageLookupByLibrary.simpleMessage("Звук"),
+        "settingsThemeDarkMode":
+            MessageLookupByLibrary.simpleMessage("Темний режим"),
+        "settingsThemeLabel": MessageLookupByLibrary.simpleMessage("Тема"),
+        "settingsVibrationLabel":
+            MessageLookupByLibrary.simpleMessage("Вібрація"),
         "trainYourBrainMagicTriangle":
             MessageLookupByLibrary.simpleMessage("Магічний трикутник"),
         "trainYourBrainMagicTriangleInfo": MessageLookupByLibrary.simpleMessage(
@@ -118,6 +186,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "trainYourBrainPicturePuzzle":
             MessageLookupByLibrary.simpleMessage("Головоломка з зображенням"),
         "trainYourBrainPicturePuzzleInfo": MessageLookupByLibrary.simpleMessage(
-            "Кожна форма представляє число. Знайдіть число кожної форми з даного рівняння та вирішіть останнє рівняння.")
+            "Кожна форма представляє число. Знайдіть число кожної форми з даного рівняння та вирішіть останнє рівняння."),
+        "yesButtonLabel": MessageLookupByLibrary.simpleMessage("Так"),
+        "yourCurrentScoreLabel":
+            MessageLookupByLibrary.simpleMessage("Ваш поточний рахунок"),
+        "yourScoreLabel": MessageLookupByLibrary.simpleMessage("Твій рахунок")
       };
 }

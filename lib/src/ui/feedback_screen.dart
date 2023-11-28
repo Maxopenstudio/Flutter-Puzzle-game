@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:mathsgames/generated/l10n.dart';
 
 import 'package:mathsgames/src/core/app_constant.dart';
 import 'package:mathsgames/src/ui/resizer/fetch_pixels.dart';
@@ -84,7 +85,7 @@ class _FeedbackScreen extends State<FeedbackScreen> {
                 buildExpandedData(edgeInsets, starSize, selection, context),
                 getButtonWidget(
                   context,
-                  "Submit Feedback",
+                  S.current.feedbackSubmitButton,
                   KeyUtil.primaryColor1,
                   () async {
                     if (rate >= 3) {
@@ -99,7 +100,7 @@ class _FeedbackScreen extends State<FeedbackScreen> {
                         subject: 'App Feedback',
                         isHTML: false,
                       );
-                      await FlutterEmailSender.send(email);
+                      await FlutterEmailSender.send(email); // TODO: Подумать что сделать с отправкой отзывов
                     }
                   },
                   textColor: Theme.of(context).textTheme.bodyText1!.color,
@@ -129,13 +130,13 @@ class _FeedbackScreen extends State<FeedbackScreen> {
         padding: edgeInsets,
         children: [
           getVerSpace(FetchPixels.getPixelHeight(90)),
-          getCustomFont("Give Feedback", 53, fontColor, 1,
+          getCustomFont(S.current.feedbackHeader, 53, fontColor, 1,
               fontWeight: FontWeight.w900),
           getVerSpace(FetchPixels.getPixelHeight(25)),
-          getCustomFont("Give your feedback about our app", 35, fontColor, 1,
+          getCustomFont(S.current.feedbackDescription, 35, fontColor, 1,
               fontWeight: FontWeight.w500),
           getVerSpace(FetchPixels.getPixelHeight(100)),
-          getCustomFont("Are you satisfied with this app?", 35, fontColor, 1,
+          getCustomFont(S.current.feedbackRatingQuestion, 35, fontColor, 1,
               fontWeight: FontWeight.w800),
           getVerSpace(FetchPixels.getPixelHeight(45)),
           RatingBar(
@@ -161,10 +162,10 @@ class _FeedbackScreen extends State<FeedbackScreen> {
                 });
               }),
           getVerSpace(FetchPixels.getPixelHeight(140)),
-          getCustomFont("Tell us what can be improved!", 35, fontColor, 1,
+          getCustomFont(S.current.feedbackImproved, 35, fontColor, 1,
               fontWeight: FontWeight.w800),
           getVerSpace(FetchPixels.getPixelHeight(40)),
-          getDefaultTextFiled(context, "Write your feedback...",
+          getDefaultTextFiled(context, S.current.feedbackWrite,
               feedbackController, fontColor, Colors.grey,
               minLines: true)
         ],

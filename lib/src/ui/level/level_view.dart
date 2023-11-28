@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/data/models/dashboard.dart';
 import 'package:provider/provider.dart';
 import 'package:tuple/tuple.dart';
@@ -206,7 +207,7 @@ class _LevelViewState extends State<LevelView> with TickerProviderStateMixin {
                                                 .copyWith(
                                                     fontWeight: FontWeight.w500,
                                                     color: Colors.black),
-                                            'Level',
+                                            S.current.gameLevelLabel,
                                             TextAlign.center,
                                             getPercentSize(height, 15)),
                                       ),

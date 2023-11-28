@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../../generated/l10n.dart';
 import '../../core/app_assets.dart';
 import '../../core/app_constant.dart';
 import '../../utility/Constants.dart';
@@ -99,7 +100,7 @@ class CommonDualScoreWidget extends StatelessWidget {
                                     .textTheme
                                     .subtitle2!
                                     .copyWith(fontWeight: FontWeight.w600),
-                                '${index + 1}/20\nQuiz',
+                                '${index + 1}/20\n${S.current.dualQuiz}',
                                 TextAlign.center,
                                 getPercentSize(circle, 15)),
                           )
@@ -169,7 +170,7 @@ class CommonDualScoreWidget extends StatelessWidget {
                                         .copyWith(
                                           fontWeight: FontWeight.w500,
                                         ),
-                                    "Player 1",
+                                    S.current.playerOne,
                                     TextAlign.center,
                                     getPercentSize(scoreHeight, 12)),
                               ],
@@ -203,7 +204,7 @@ class CommonDualScoreWidget extends StatelessWidget {
                                         .copyWith(
                                           fontWeight: FontWeight.w500,
                                         ),
-                                    "Player 2",
+                                    S.current.playerTwo,
                                     TextAlign.center,
                                     getPercentSize(scoreHeight, 12)),
                               ],

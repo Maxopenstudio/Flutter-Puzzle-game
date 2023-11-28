@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/app_constant.dart';
 import 'package:mathsgames/src/data/models/game_info_dialog.dart';
 import 'package:mathsgames/src/utility/dialog_info_util.dart';
@@ -71,7 +72,7 @@ class CommonGamePauseDialogView extends StatelessWidget {
             Theme.of(context).textTheme.bodyText1!.copyWith(
                   fontWeight: FontWeight.w500,
                 ),
-            "Your current score",
+            S.current.yourCurrentScoreLabel,
             TextAlign.center,
             getScreenPercentSize(context, 2.2)),
 
@@ -80,7 +81,7 @@ class CommonGamePauseDialogView extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: getButtonWidget(context, "Resume".toUpperCase(),
+              child: getButtonWidget(context, S.current.resumeButtonLabel.toUpperCase(),
                   colorTuple.item1.primaryColor, () {
                 Navigator.pop(context, true);
               }, textColor: Colors.black),

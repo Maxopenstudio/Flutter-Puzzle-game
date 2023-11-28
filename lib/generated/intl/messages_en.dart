@@ -22,9 +22,44 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "answerIsLabel": MessageLookupByLibrary.simpleMessage("Answer is :"),
+        "cancelButtonLabel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "clearCalculatorButton": MessageLookupByLibrary.simpleMessage("Clear"),
+        "difficultyEasy": MessageLookupByLibrary.simpleMessage("Easy"),
+        "difficultyHard": MessageLookupByLibrary.simpleMessage("Hard"),
+        "difficultyHeaderLabel":
+            MessageLookupByLibrary.simpleMessage("Select Difficulty"),
+        "difficultyMedium": MessageLookupByLibrary.simpleMessage("Medium"),
+        "dualQuiz": MessageLookupByLibrary.simpleMessage("Quiz"),
+        "feedbackDescription": MessageLookupByLibrary.simpleMessage(
+            "Give your feedback about our app"),
+        "feedbackHeader": MessageLookupByLibrary.simpleMessage("Give Feedback"),
+        "feedbackImproved": MessageLookupByLibrary.simpleMessage(
+            "Tell us what can be improved!"),
+        "feedbackRatingQuestion": MessageLookupByLibrary.simpleMessage(
+            "Are you satisfied with this app?"),
+        "feedbackSubmitButton":
+            MessageLookupByLibrary.simpleMessage("Submit Feedback"),
+        "feedbackWrite":
+            MessageLookupByLibrary.simpleMessage("Write your feedback..."),
+        "forCorrectAnswer":
+            MessageLookupByLibrary.simpleMessage("for correct answer"),
+        "forWrongAnswer":
+            MessageLookupByLibrary.simpleMessage("for wrong answer"),
+        "gameLevelLabel": MessageLookupByLibrary.simpleMessage("Level"),
         "gameNameLabel": MessageLookupByLibrary.simpleMessage("Math Games"),
+        "gameOverLabel": MessageLookupByLibrary.simpleMessage("Game Over!!!"),
         "gameShortDescLabel": MessageLookupByLibrary.simpleMessage(
             "Train Your Brain, Improve Your Math Skill"),
+        "goButtonLabel": MessageLookupByLibrary.simpleMessage("Go"),
+        "hintByCoinButtonLabel": MessageLookupByLibrary.simpleMessage("Coin"),
+        "hintByCoinDescrLabel":
+            MessageLookupByLibrary.simpleMessage("Use 10 coin"),
+        "hintByCoinNoHaveCoins":
+            MessageLookupByLibrary.simpleMessage("Coin not available"),
+        "hintHeaderLabel": MessageLookupByLibrary.simpleMessage("Hint"),
+        "hintWatchVideoButtonLabel":
+            MessageLookupByLibrary.simpleMessage("Watch Video"),
         "mathPuzzleCategoryCalculator":
             MessageLookupByLibrary.simpleMessage("Calculator"),
         "mathPuzzleCategoryCalculatorInfo":
@@ -99,6 +134,34 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Memory Puzzle"),
         "memoryPuzzleModeShortDesc": MessageLookupByLibrary.simpleMessage(
             "Memorise numbers & signs before applying calculation to them."),
+        "noButtonLabel": MessageLookupByLibrary.simpleMessage("No"),
+        "okButtonLabel": MessageLookupByLibrary.simpleMessage("Ok"),
+        "playButtonLabel": MessageLookupByLibrary.simpleMessage("Play"),
+        "playerOne": MessageLookupByLibrary.simpleMessage("Player 1"),
+        "playerTwo": MessageLookupByLibrary.simpleMessage("Player 2"),
+        "quitLevelDescription": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to quit the game?"),
+        "quitLevelHeaderLabel": MessageLookupByLibrary.simpleMessage("Quit!!!"),
+        "rateCancelButton": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "rateGiveYourOpinion":
+            MessageLookupByLibrary.simpleMessage("Give Your Opinion"),
+        "rateGiveYourOpinionDescription": MessageLookupByLibrary.simpleMessage(
+            "Make better math goal for you,and would love to know how would rate our app?"),
+        "rateSubmitButton": MessageLookupByLibrary.simpleMessage("Submit"),
+        "restartButton": MessageLookupByLibrary.simpleMessage("Restart"),
+        "resumeButtonLabel": MessageLookupByLibrary.simpleMessage("Resume"),
+        "settingsFeedback": MessageLookupByLibrary.simpleMessage("Feedback"),
+        "settingsHeaderLabel": MessageLookupByLibrary.simpleMessage("Settings"),
+        "settingsPrivacyPolicy":
+            MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "settingsRateUs": MessageLookupByLibrary.simpleMessage("Rate Us"),
+        "settingsShare": MessageLookupByLibrary.simpleMessage("Share"),
+        "settingsSoundLabel": MessageLookupByLibrary.simpleMessage("Sound"),
+        "settingsThemeDarkMode":
+            MessageLookupByLibrary.simpleMessage("Dark Mode"),
+        "settingsThemeLabel": MessageLookupByLibrary.simpleMessage("Theme"),
+        "settingsVibrationLabel":
+            MessageLookupByLibrary.simpleMessage("Vibration"),
         "trainYourBrainMagicTriangle":
             MessageLookupByLibrary.simpleMessage("Magic triangle"),
         "trainYourBrainMagicTriangleInfo": MessageLookupByLibrary.simpleMessage(
@@ -118,6 +181,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "trainYourBrainPicturePuzzle":
             MessageLookupByLibrary.simpleMessage("Picture Puzzle"),
         "trainYourBrainPicturePuzzleInfo": MessageLookupByLibrary.simpleMessage(
-            "Each shape represents a number. Find the number of each shape from given equation and solve the last equation.")
+            "Each shape represents a number. Find the number of each shape from given equation and solve the last equation."),
+        "yesButtonLabel": MessageLookupByLibrary.simpleMessage("Yes"),
+        "yourCurrentScoreLabel":
+            MessageLookupByLibrary.simpleMessage("Your current score"),
+        "yourScoreLabel": MessageLookupByLibrary.simpleMessage("Your Score")
       };
 }

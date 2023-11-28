@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../../generated/l10n.dart';
 import '../../core/app_assets.dart';
 import '../../utility/Constants.dart';
 import '../model/gradient_model.dart';
@@ -40,7 +41,7 @@ class CommonGameExitDialogView extends StatelessWidget {
         SizedBox(height: getScreenPercentSize(context, 1.8)),
 
         getTextWidget(Theme.of(context).textTheme.bodyText1!.copyWith(fontWeight: FontWeight.bold),
-            "Quit!!!", TextAlign.center, getScreenPercentSize(context,2.5)),
+            S.current.quitLevelHeaderLabel, TextAlign.center, getScreenPercentSize(context,2.5)),
 
 
 
@@ -52,7 +53,7 @@ class CommonGameExitDialogView extends StatelessWidget {
 
         getTextWidget(Theme.of(context).textTheme.bodyText1!.copyWith(fontWeight: FontWeight.w400,
      ),
-            "Are you sure you want to quit the game?", TextAlign.center, getScreenPercentSize(context,2.2)),
+            S.current.quitLevelDescription, TextAlign.center, getScreenPercentSize(context,2.2)),
 
 
 
@@ -60,11 +61,11 @@ class CommonGameExitDialogView extends StatelessWidget {
 
         Row(
           children: [
-            Expanded(child: getButtonWidget(context, "Yes", colorTuple.item1.primaryColor, (){
+            Expanded(child: getButtonWidget(context, S.current.yesButtonLabel, colorTuple.item1.primaryColor, (){
               Navigator.pop(context, true);
             },textColor: darken(colorTuple.item1.primaryColor!),isBorder: true),flex: 1,),
             SizedBox(width: getWidthPercentSize(context, 3),),
-            Expanded(child: getButtonWidget(context, "No", colorTuple.item1.primaryColor, (){
+            Expanded(child: getButtonWidget(context, S.current.noButtonLabel, colorTuple.item1.primaryColor, (){
               Navigator.pop(context, false);
             },textColor: Colors.black),flex: 1,),
           ],

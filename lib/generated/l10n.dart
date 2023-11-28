@@ -489,6 +489,496 @@ class S {
       args: [],
     );
   }
+
+  /// `for correct answer`
+  String get forCorrectAnswer {
+    return Intl.message(
+      'for correct answer',
+      name: 'forCorrectAnswer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `for wrong answer`
+  String get forWrongAnswer {
+    return Intl.message(
+      'for wrong answer',
+      name: 'forWrongAnswer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancelButtonLabel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancelButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Go`
+  String get goButtonLabel {
+    return Intl.message(
+      'Go',
+      name: 'goButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Game Over!!!`
+  String get gameOverLabel {
+    return Intl.message(
+      'Game Over!!!',
+      name: 'gameOverLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your Score`
+  String get yourScoreLabel {
+    return Intl.message(
+      'Your Score',
+      name: 'yourScoreLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Level`
+  String get gameLevelLabel {
+    return Intl.message(
+      'Level',
+      name: 'gameLevelLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Play`
+  String get playButtonLabel {
+    return Intl.message(
+      'Play',
+      name: 'playButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your current score`
+  String get yourCurrentScoreLabel {
+    return Intl.message(
+      'Your current score',
+      name: 'yourCurrentScoreLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Resume`
+  String get resumeButtonLabel {
+    return Intl.message(
+      'Resume',
+      name: 'resumeButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Clear`
+  String get clearCalculatorButton {
+    return Intl.message(
+      'Clear',
+      name: 'clearCalculatorButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hint`
+  String get hintHeaderLabel {
+    return Intl.message(
+      'Hint',
+      name: 'hintHeaderLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Watch Video`
+  String get hintWatchVideoButtonLabel {
+    return Intl.message(
+      'Watch Video',
+      name: 'hintWatchVideoButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Coin`
+  String get hintByCoinButtonLabel {
+    return Intl.message(
+      'Coin',
+      name: 'hintByCoinButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use 10 coin`
+  String get hintByCoinDescrLabel {
+    return Intl.message(
+      'Use 10 coin',
+      name: 'hintByCoinDescrLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Coin not available`
+  String get hintByCoinNoHaveCoins {
+    return Intl.message(
+      'Coin not available',
+      name: 'hintByCoinNoHaveCoins',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ok`
+  String get okButtonLabel {
+    return Intl.message(
+      'Ok',
+      name: 'okButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Answer is :`
+  String get answerIsLabel {
+    return Intl.message(
+      'Answer is :',
+      name: 'answerIsLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quit!!!`
+  String get quitLevelHeaderLabel {
+    return Intl.message(
+      'Quit!!!',
+      name: 'quitLevelHeaderLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to quit the game?`
+  String get quitLevelDescription {
+    return Intl.message(
+      'Are you sure you want to quit the game?',
+      name: 'quitLevelDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes`
+  String get yesButtonLabel {
+    return Intl.message(
+      'Yes',
+      name: 'yesButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No`
+  String get noButtonLabel {
+    return Intl.message(
+      'No',
+      name: 'noButtonLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settingsHeaderLabel {
+    return Intl.message(
+      'Settings',
+      name: 'settingsHeaderLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sound`
+  String get settingsSoundLabel {
+    return Intl.message(
+      'Sound',
+      name: 'settingsSoundLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vibration`
+  String get settingsVibrationLabel {
+    return Intl.message(
+      'Vibration',
+      name: 'settingsVibrationLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Theme`
+  String get settingsThemeLabel {
+    return Intl.message(
+      'Theme',
+      name: 'settingsThemeLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dark Mode`
+  String get settingsThemeDarkMode {
+    return Intl.message(
+      'Dark Mode',
+      name: 'settingsThemeDarkMode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Share`
+  String get settingsShare {
+    return Intl.message(
+      'Share',
+      name: 'settingsShare',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rate Us`
+  String get settingsRateUs {
+    return Intl.message(
+      'Rate Us',
+      name: 'settingsRateUs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Feedback`
+  String get settingsFeedback {
+    return Intl.message(
+      'Feedback',
+      name: 'settingsFeedback',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get settingsPrivacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'settingsPrivacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Give Your Opinion`
+  String get rateGiveYourOpinion {
+    return Intl.message(
+      'Give Your Opinion',
+      name: 'rateGiveYourOpinion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Make better math goal for you,and would love to know how would rate our app?`
+  String get rateGiveYourOpinionDescription {
+    return Intl.message(
+      'Make better math goal for you,and would love to know how would rate our app?',
+      name: 'rateGiveYourOpinionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get rateCancelButton {
+    return Intl.message(
+      'Cancel',
+      name: 'rateCancelButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Submit`
+  String get rateSubmitButton {
+    return Intl.message(
+      'Submit',
+      name: 'rateSubmitButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Give Feedback`
+  String get feedbackHeader {
+    return Intl.message(
+      'Give Feedback',
+      name: 'feedbackHeader',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Give your feedback about our app`
+  String get feedbackDescription {
+    return Intl.message(
+      'Give your feedback about our app',
+      name: 'feedbackDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you satisfied with this app?`
+  String get feedbackRatingQuestion {
+    return Intl.message(
+      'Are you satisfied with this app?',
+      name: 'feedbackRatingQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tell us what can be improved!`
+  String get feedbackImproved {
+    return Intl.message(
+      'Tell us what can be improved!',
+      name: 'feedbackImproved',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Write your feedback...`
+  String get feedbackWrite {
+    return Intl.message(
+      'Write your feedback...',
+      name: 'feedbackWrite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Submit Feedback`
+  String get feedbackSubmitButton {
+    return Intl.message(
+      'Submit Feedback',
+      name: 'feedbackSubmitButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select Difficulty`
+  String get difficultyHeaderLabel {
+    return Intl.message(
+      'Select Difficulty',
+      name: 'difficultyHeaderLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Easy`
+  String get difficultyEasy {
+    return Intl.message(
+      'Easy',
+      name: 'difficultyEasy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Medium`
+  String get difficultyMedium {
+    return Intl.message(
+      'Medium',
+      name: 'difficultyMedium',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hard`
+  String get difficultyHard {
+    return Intl.message(
+      'Hard',
+      name: 'difficultyHard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Restart`
+  String get restartButton {
+    return Intl.message(
+      'Restart',
+      name: 'restartButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quiz`
+  String get dualQuiz {
+    return Intl.message(
+      'Quiz',
+      name: 'dualQuiz',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Player 1`
+  String get playerOne {
+    return Intl.message(
+      'Player 1',
+      name: 'playerOne',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Player 2`
+  String get playerTwo {
+    return Intl.message(
+      'Player 2',
+      name: 'playerTwo',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

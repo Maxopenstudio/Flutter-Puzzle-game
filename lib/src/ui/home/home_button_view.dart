@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/app_assets.dart';
 import 'package:mathsgames/src/core/app_constant.dart';
 import 'package:mathsgames/src/ui/common/common_tab_animation_view.dart';
@@ -141,7 +142,7 @@ class HomeButtonView extends StatelessWidget {
                             Theme.of(context).textTheme.subtitle2!.copyWith(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold),
-                            'Play',
+                            S.current.playButtonLabel,
                             TextAlign.center,
                             getPercentSize(remainHeight, 9)),
                       ),

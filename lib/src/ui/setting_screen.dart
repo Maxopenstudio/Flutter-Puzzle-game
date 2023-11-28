@@ -13,6 +13,7 @@ import 'package:mathsgames/src/utility/Constants.dart';
 import 'package:provider/provider.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../generated/l10n.dart';
 import '../core/app_assets.dart';
 import 'app/theme_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -93,7 +94,7 @@ class _SettingScreen extends State<SettingScreen> {
                     Expanded(
                         child: Center(
                             child: getCustomFont(
-                                'Settings', 35, theme.color!, 1,
+                                S.current.settingsHeaderLabel, 35, theme.color!, 1,
                                 fontWeight: FontWeight.w600))),
                   ],
                 ),
@@ -131,7 +132,7 @@ class _SettingScreen extends State<SettingScreen> {
               height: FetchPixels.getPixelHeight(30),
             ),
             verSpace,
-            getTitleText("Sound"),
+            getTitleText(S.current.settingsSoundLabel),
             verSpace,
             SizedBox(
               height: FetchPixels.getPixelHeight(125),
@@ -151,7 +152,7 @@ class _SettingScreen extends State<SettingScreen> {
                       child: Row(
                         children: [
                           Expanded(
-                            child: getSubTitleFonts("Sound"),
+                            child: getSubTitleFonts(S.current.settingsSoundLabel),
                             flex: 1,
                           ),
                           ValueListenableBuilder(
@@ -191,7 +192,7 @@ class _SettingScreen extends State<SettingScreen> {
                       child: Row(
                         children: [
                           Expanded(
-                            child: getSubTitleFonts("Vibration"),
+                            child: getSubTitleFonts(S.current.settingsVibrationLabel),
                             flex: 1,
                           ),
                           ValueListenableBuilder(
@@ -223,7 +224,7 @@ class _SettingScreen extends State<SettingScreen> {
             verSpace,
             getDivider(),
             verSpace,
-            getTitleText("Theme"),
+            getTitleText(S.current.settingsThemeLabel),
             verSpace,
             SizedBox(
               height: FetchPixels.getPixelHeight(125),
@@ -243,7 +244,7 @@ class _SettingScreen extends State<SettingScreen> {
                       child: Row(
                         children: [
                           Expanded(
-                            child: getSubTitleFonts("Dark Mode"),
+                            child: getSubTitleFonts(S.current.settingsThemeDarkMode),
                             flex: 1,
                           ),
                           ValueListenableBuilder(
@@ -280,13 +281,13 @@ class _SettingScreen extends State<SettingScreen> {
             verSpace,
             getDivider(),
             getCell(
-                string: "Share",
+                string: S.current.settingsShare,
                 function: () {
                   share();
                 }),
             getDivider(),
             getCell(
-                string: "Rate Us",
+                string: S.current.settingsRateUs,
                 function: () {
                   // LaunchReview.launch();
 
@@ -304,7 +305,7 @@ class _SettingScreen extends State<SettingScreen> {
                 }),
             getDivider(),
             getCell(
-                string: "Feedback",
+                string: S.current.settingsFeedback,
                 function: () async {
                   GradientModel model = new GradientModel();
                   model.primaryColor = KeyUtil.primaryColor1;
@@ -330,7 +331,7 @@ class _SettingScreen extends State<SettingScreen> {
                 }),
             getDivider(),
             getCell(
-                string: "Privacy Policy",
+                string: S.current.settingsPrivacyPolicy,
                 function: () async {
                   _launchURL();
                 }),

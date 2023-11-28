@@ -9,6 +9,7 @@ import 'package:mathsgames/src/ui/home/home_button_view.dart';
 import 'package:provider/provider.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../../generated/l10n.dart';
 import '../../core/app_assets.dart';
 import '../../core/app_constant.dart';
 import '../../data/models/game_category.dart';
@@ -292,7 +293,7 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
                               .textTheme
                               .subtitle1!
                               .copyWith(fontWeight: FontWeight.w600),
-                          "Select Difficulty",
+                          S.current.difficultyHeaderLabel,
                           TextAlign.center,
                           getScreenPercentSize(context, 2)),
                       Container(
@@ -301,9 +302,9 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
                         margin: EdgeInsets.symmetric(
                             vertical: margin, horizontal: 5),
                       ),
-                      getCell('Easy', true, easyQuiz, themeProvider),
-                      getCell('Medium', false, mediumQuiz, themeProvider),
-                      getCell('Hard', false, hardQuiz, themeProvider),
+                      getCell(S.current.difficultyEasy, true, easyQuiz, themeProvider),
+                      getCell(S.current.difficultyMedium, false, mediumQuiz, themeProvider),
+                      getCell(S.current.difficultyHard, false, hardQuiz, themeProvider),
                       SizedBox(
                         height: margin,
                       ),

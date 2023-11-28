@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/app_constant.dart';
 
 import 'package:mathsgames/src/ui/calculator/calculator_provider.dart';
@@ -128,7 +129,7 @@ class CalculatorView extends StatelessWidget {
                               String e = list[index];
                               if (e == "Clear") {
                                 return CommonClearButton(
-                                    text: "Clear",
+                                    text: S.current.clearCalculatorButton,
                                     height: height,
                                     onTab: () {
                                       context

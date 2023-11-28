@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/color_scheme.dart';
 import 'package:mathsgames/src/ui/resizer/fetch_pixels.dart';
 import 'package:provider/provider.dart';
@@ -175,7 +176,7 @@ class CommonMainWidget<T extends GameProvider> extends StatelessWidget {
                                         .textTheme
                                         .subtitle2!
                                         .copyWith(fontWeight: FontWeight.w500),
-                                    'Level : ${model.levelNo}',
+                                    '${S.current.gameLevelLabel} : ${model.levelNo}',
                                     TextAlign.center,
                                     getPercentSize(mainHeight, 6)),
                               ),

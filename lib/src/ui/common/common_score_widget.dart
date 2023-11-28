@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/color_scheme.dart';
 import 'package:mathsgames/src/ui/resizer/fetch_pixels.dart';
 import 'package:provider/provider.dart';
@@ -143,7 +144,7 @@ class CommonScoreWidget extends StatelessWidget {
                                     .textTheme
                                     .subtitle2!
                                     .copyWith(fontWeight: FontWeight.w600),
-                                '$currentLevel/$totalLevel\nLevel',
+                                '$currentLevel/$totalLevel\n${S.current.gameLevelLabel}',
                                 TextAlign.center,
                                 getPercentSize(circle, 15)),
                           ),
@@ -381,7 +382,7 @@ class CommonScoreWidget extends StatelessWidget {
                             .textTheme
                             .bodyText1!
                             .copyWith(fontWeight: FontWeight.bold),
-                        "Game Over!!!",
+                        S.current.gameOverLabel,
                         TextAlign.center,
                         getScreenPercentSize(context, 3.5)),
                   ),
@@ -413,7 +414,7 @@ class CommonScoreWidget extends StatelessWidget {
                   getTextWidget(
                       Theme.of(context).textTheme.subtitle2!.copyWith(
                           fontWeight: FontWeight.w500, color: Colors.grey),
-                      'Your Score',
+                      S.current.yourScoreLabel,
                       TextAlign.center,
                       getPercentSize(scoreHeight, 12)),
 

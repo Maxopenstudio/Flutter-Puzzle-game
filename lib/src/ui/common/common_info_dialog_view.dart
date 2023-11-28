@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mathsgames/generated/l10n.dart';
 import 'package:mathsgames/src/core/app_constant.dart';
 import 'package:mathsgames/src/data/models/game_info_dialog.dart';
 import 'package:mathsgames/src/utility/Constants.dart';
@@ -102,7 +103,7 @@ class CommonInfoDialogView extends StatelessWidget {
                           .textTheme
                           .bodyText1!
                           .copyWith(fontWeight: FontWeight.w700),
-                      "for correct answer",
+                      S.current.forCorrectAnswer,
                       TextAlign.center,
                       getScreenPercentSize(context, 2)),
 
@@ -114,7 +115,7 @@ class CommonInfoDialogView extends StatelessWidget {
                           .textTheme
                           .bodyText1!
                           .copyWith(fontWeight: FontWeight.w700),
-                      "for wrong answer",
+                      S.current.forWrongAnswer,
                       TextAlign.center,
                       getScreenPercentSize(context, 2)),
 
@@ -144,7 +145,7 @@ class CommonInfoDialogView extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                  child: getButtonWidget(context, "Cancel",
+                  child: getButtonWidget(context, S.current.cancelButtonLabel,
                       Theme.of(context).textTheme.bodyText1!.color, () {
                 Navigator.pop(context);
               },
@@ -154,7 +155,7 @@ class CommonInfoDialogView extends StatelessWidget {
                 width: getWidthPercentSize(context, 5),
               ),
               Expanded(
-                  child: getButtonWidget(context, "Go", color, () {
+                  child: getButtonWidget(context, S.current.goButtonLabel, color, () {
                 Navigator.pop(context);
               }, textColor: Colors.black))
             ],

@@ -4,6 +4,7 @@ import 'package:mathsgames/src/core/app_constant.dart';
 import 'package:mathsgames/src/utility/Constants.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../../generated/l10n.dart';
 import '../model/gradient_model.dart';
 import '../soundPlayer/audio_file.dart';
 import 'common_dual_score_widget.dart';
@@ -48,7 +49,7 @@ class CommonDualGameOverDialogView extends StatelessWidget {
                   .textTheme
                   .bodyText1!
                   .copyWith(fontWeight: FontWeight.bold),
-              "Game Over!!!",
+              S.current.gameOverLabel,
               TextAlign.center,
               getScreenPercentSize(context, 3)),
         ),
@@ -74,7 +75,7 @@ class CommonDualGameOverDialogView extends StatelessWidget {
             },
           ),
         )),
-        getButtonWidget(context, "Restart", colorTuple.item1.primaryColor, () {
+        getButtonWidget(context, S.current.restartButton, colorTuple.item1.primaryColor, () {
           Navigator.pop(context, true);
         }, textColor: Colors.black),
       ],

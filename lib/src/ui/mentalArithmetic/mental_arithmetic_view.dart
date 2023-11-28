@@ -94,7 +94,7 @@ class MentalArithmeticView extends StatelessWidget {
                         child: Container(
                           // color: Colors.red,
                           margin: EdgeInsets.only(
-                              bottom: getPercentSize(mainHeight, 15)),
+                              bottom: getPercentSize(mainHeight, 0)),
 
                           child: Selector<MentalArithmeticProvider,
                                   MentalArithmetic>(

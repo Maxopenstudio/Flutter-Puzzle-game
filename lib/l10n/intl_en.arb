@@ -12,6 +12,14 @@
   "mathPuzzleCategoryTrueFalse": "True False",
   "mathPuzzleCategoryComplexCalculation": "Complex Calculation",
   "mathPuzzleCategoryDualGame": "Dual Game",
+  "mathPuzzleCategoryCalculatorInfo": "You need to solve given equation correctly.",
+  "mathPuzzleCategoryGuessSignInfo": "You need to find correct sign that finishes the given equation.",
+  "mathPuzzleCategoryFindMissingInfo": "Select the correct number to finish the equation.",
+  "mathPuzzleCategoryTrueFalseInfo": "Select the correct number to finish the equation.",
+  "mathPuzzleCategoryDualGameInfo": "Select the correct number to finish the equation.",
+  "mathPuzzleCategoryComplexCalculationInfo": "You need to find correct sign that finishes the given equation.",
+  "mathPuzzleCategoryCorrectAnswerInfo": "Select the correct number to finish the equation.",
+  "mathPuzzleCategoryQuickCalculationInfo": "Solve simple equation one by one. Faster you solve, more time will be given to solve next equation.",
 
   "memoryPuzzleModeLabel": "Memory Puzzle",
   "memoryPuzzleModeShortDesc": "Memorise numbers & signs before applying calculation to them.",
@@ -21,11 +29,21 @@
   "memoryPuzzleCategoryMathematicalPairs": "Mathematical pairs",
   "memoryPuzzleCategoryCubeRoot": "Cube Root",
   "memoryPuzzleCategoryConcentration": "Concentration",
+  "memoryPuzzleCategorySquareRootInfo": "Square root the given number.",
+  "memoryPuzzleCategoryCubeRootInfo": "Select the correct number to finish the equation.",
+  "memoryPuzzleCategoryConcentrationInfo": "Select the correct number to finish the equation.",
+  "memoryPuzzleCategoryMathematicalPairsInfo": "Each card contains either equation or an answer. Match the equation with correct answer.",
+  "memoryPuzzleCategoryMentalArithmeticInfo": "Number with operator will be shown one by one. You need to remember the number with operator and write final answer(No precedency).",
+  "memoryPuzzleCategoryMathGridInfo": "Select number from math grid to reach answer shown above. You can select any number to reach above answer.",
 
   "trainYourBrainModeLabel": "Train Your Brain",
   "trainYourBrainModeShortDesc": "Enhance logical thinking, concentration and core cognitive skills.",
   "trainYourBrainMagicTriangle": "Magic triangle",
   "trainYourBrainPicturePuzzle": "Picture Puzzle",
   "trainYourBrainNumberPyramid": "Number Pyramid",
-  "trainYourBrainNumericMemory": "Numeric Memory"
+  "trainYourBrainNumericMemory": "Numeric Memory",
+  "trainYourBrainNumericMemoryInfo": "Select the correct number to finish the equation.",
+  "trainYourBrainMagicTriangleInfo": "Sum of the each side of triangle should be equal to the given number. To place any number, select triangle circle and press any given number from panel.",
+  "trainYourBrainPicturePuzzleInfo": "Each shape represents a number. Find the number of each shape from given equation and solve the last equation.",
+  "trainYourBrainNumberPyramidInfo": "Sum of consecutive cell should be placed on top cell. You need to fill all cell correctly to solve Number pyramid."
 }

@@ -170,6 +170,86 @@ class S {
     );
   }
 
+  /// `You need to solve given equation correctly.`
+  String get mathPuzzleCategoryCalculatorInfo {
+    return Intl.message(
+      'You need to solve given equation correctly.',
+      name: 'mathPuzzleCategoryCalculatorInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You need to find correct sign that finishes the given equation.`
+  String get mathPuzzleCategoryGuessSignInfo {
+    return Intl.message(
+      'You need to find correct sign that finishes the given equation.',
+      name: 'mathPuzzleCategoryGuessSignInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select the correct number to finish the equation.`
+  String get mathPuzzleCategoryFindMissingInfo {
+    return Intl.message(
+      'Select the correct number to finish the equation.',
+      name: 'mathPuzzleCategoryFindMissingInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select the correct number to finish the equation.`
+  String get mathPuzzleCategoryTrueFalseInfo {
+    return Intl.message(
+      'Select the correct number to finish the equation.',
+      name: 'mathPuzzleCategoryTrueFalseInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select the correct number to finish the equation.`
+  String get mathPuzzleCategoryDualGameInfo {
+    return Intl.message(
+      'Select the correct number to finish the equation.',
+      name: 'mathPuzzleCategoryDualGameInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You need to find correct sign that finishes the given equation.`
+  String get mathPuzzleCategoryComplexCalculationInfo {
+    return Intl.message(
+      'You need to find correct sign that finishes the given equation.',
+      name: 'mathPuzzleCategoryComplexCalculationInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select the correct number to finish the equation.`
+  String get mathPuzzleCategoryCorrectAnswerInfo {
+    return Intl.message(
+      'Select the correct number to finish the equation.',
+      name: 'mathPuzzleCategoryCorrectAnswerInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Solve simple equation one by one. Faster you solve, more time will be given to solve next equation.`
+  String get mathPuzzleCategoryQuickCalculationInfo {
+    return Intl.message(
+      'Solve simple equation one by one. Faster you solve, more time will be given to solve next equation.',
+      name: 'mathPuzzleCategoryQuickCalculationInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Memory Puzzle`
   String get memoryPuzzleModeLabel {
     return Intl.message(
@@ -250,6 +330,66 @@ class S {
     );
   }
 
+  /// `Square root the given number.`
+  String get memoryPuzzleCategorySquareRootInfo {
+    return Intl.message(
+      'Square root the given number.',
+      name: 'memoryPuzzleCategorySquareRootInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select the correct number to finish the equation.`
+  String get memoryPuzzleCategoryCubeRootInfo {
+    return Intl.message(
+      'Select the correct number to finish the equation.',
+      name: 'memoryPuzzleCategoryCubeRootInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select the correct number to finish the equation.`
+  String get memoryPuzzleCategoryConcentrationInfo {
+    return Intl.message(
+      'Select the correct number to finish the equation.',
+      name: 'memoryPuzzleCategoryConcentrationInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Each card contains either equation or an answer. Match the equation with correct answer.`
+  String get memoryPuzzleCategoryMathematicalPairsInfo {
+    return Intl.message(
+      'Each card contains either equation or an answer. Match the equation with correct answer.',
+      name: 'memoryPuzzleCategoryMathematicalPairsInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number with operator will be shown one by one. You need to remember the number with operator and write final answer(No precedency).`
+  String get memoryPuzzleCategoryMentalArithmeticInfo {
+    return Intl.message(
+      'Number with operator will be shown one by one. You need to remember the number with operator and write final answer(No precedency).',
+      name: 'memoryPuzzleCategoryMentalArithmeticInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select number from math grid to reach answer shown above. You can select any number to reach above answer.`
+  String get memoryPuzzleCategoryMathGridInfo {
+    return Intl.message(
+      'Select number from math grid to reach answer shown above. You can select any number to reach above answer.',
+      name: 'memoryPuzzleCategoryMathGridInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Train Your Brain`
   String get trainYourBrainModeLabel {
     return Intl.message(
@@ -305,6 +445,46 @@ class S {
     return Intl.message(
       'Numeric Memory',
       name: 'trainYourBrainNumericMemory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select the correct number to finish the equation.`
+  String get trainYourBrainNumericMemoryInfo {
+    return Intl.message(
+      'Select the correct number to finish the equation.',
+      name: 'trainYourBrainNumericMemoryInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sum of the each side of triangle should be equal to the given number. To place any number, select triangle circle and press any given number from panel.`
+  String get trainYourBrainMagicTriangleInfo {
+    return Intl.message(
+      'Sum of the each side of triangle should be equal to the given number. To place any number, select triangle circle and press any given number from panel.',
+      name: 'trainYourBrainMagicTriangleInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Each shape represents a number. Find the number of each shape from given equation and solve the last equation.`
+  String get trainYourBrainPicturePuzzleInfo {
+    return Intl.message(
+      'Each shape represents a number. Find the number of each shape from given equation and solve the last equation.',
+      name: 'trainYourBrainPicturePuzzleInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sum of consecutive cell should be placed on top cell. You need to fill all cell correctly to solve Number pyramid.`
+  String get trainYourBrainNumberPyramidInfo {
+    return Intl.message(
+      'Sum of consecutive cell should be placed on top cell. You need to fill all cell correctly to solve Number pyramid.',
+      name: 'trainYourBrainNumberPyramidInfo',
       desc: '',
       args: [],
     );

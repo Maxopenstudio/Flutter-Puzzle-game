@@ -42,9 +42,7 @@ class CommonAppBar<T extends GameProvider> extends StatelessWidget {
             child: Row(
               children: [
                 Consumer<T>(builder: (context, provider, child) {
-                  return getDefaultIconWidget(context,
-                      icon: AppAssets.backIcon,
-                      folder: colorTuple.item1.folderName, function: () {
+                  return getDefaultIconWidget(context, icon: AppAssets.backIcon, folder: colorTuple.item1.folderName, function: () {
                     provider.showExitDialog();
                   });
                 }),
@@ -53,25 +51,24 @@ class CommonAppBar<T extends GameProvider> extends StatelessWidget {
                 ),
                 Expanded(
                   flex: 1,
-                  child: getTextWidgetWithMaxLine(
-                      Theme.of(context)
-                          .textTheme
-                          .subtitle2!
-                          .copyWith(fontWeight: FontWeight.w700),
-                      DialogInfoUtil.getInfoDialogData(gameCategoryType!).title,
-                      TextAlign.start,
-                      getPercentSize(height, 35),
-                      1),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: getTextWidgetWithMaxLine(Theme.of(context).textTheme.subtitle2!.copyWith(fontWeight: FontWeight.w700), DialogInfoUtil.getInfoDialogData(gameCategoryType!).title, TextAlign.start, getPercentSize(height, 35), 1),
+                  ),
                 ),
-                hint == null
-                    ? Consumer<T>(builder: (context, provider, child) {
-                        return getHintIcon(
-                            function: () {
-                              provider.showHintDialog();
-                            },
-                            color: colorTuple.item1.primaryColor);
-                      })
-                    : Container(),
+                if (hint == null) ...[
+                  SizedBox(
+                    width: getWidthPercentSize(context, 2),
+                  ),
+                  Consumer<T>(builder: (context, provider, child) {
+                    return getHintIcon(
+                        function: () {
+                          provider.showHintDialog();
+                        },
+                        color: colorTuple.item1.primaryColor);
+                  })
+                ] else
+                  Container(),
                 SizedBox(
                   width: getWidthPercentSize(context, 2),
                 ),
@@ -79,15 +76,10 @@ class CommonAppBar<T extends GameProvider> extends StatelessWidget {
                 isTimer == null
                     ? Consumer<T>(builder: (context, provider, child) {
                         return provider.timerStatus == TimerStatus.pause
-                            ? getDefaultIconWidget(context,
-                                folder: colorTuple.item1.folderName,
-                                changeFolderName: false,
-                                icon: AppAssets.playIcon, function: () {
+                            ? getDefaultIconWidget(context, folder: colorTuple.item1.folderName, changeFolderName: false, icon: AppAssets.playIcon, function: () {
                                 provider.pauseResumeGame();
                               })
-                            : getDefaultIconWidget(context,
-                                folder: colorTuple.item1.folderName,
-                                icon: AppAssets.pauseIcon, function: () {
+                            : getDefaultIconWidget(context, folder: colorTuple.item1.folderName, icon: AppAssets.pauseIcon, function: () {
                                 provider.pauseResumeGame();
                               });
                       })

@@ -100,8 +100,10 @@ class MentalArithmeticView extends StatelessWidget {
                                   MentalArithmetic>(
                               selector: (p0, p1) => p1.currentState,
                               builder: (context, currentState, child) {
-                                return MentalArithmeticQuestionView(
-                                  currentState: currentState,
+                                return Container(
+                                  child: MentalArithmeticQuestionView(
+                                    currentState: currentState,
+                                  ),
                                 );
                               }),
                         ),

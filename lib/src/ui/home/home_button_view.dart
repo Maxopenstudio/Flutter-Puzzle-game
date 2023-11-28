@@ -64,14 +64,22 @@ class HomeButtonView extends StatelessWidget {
                     bottom: getPercentSize(height, 6)),
                 child: Column(
                   children: [
-                    getTextWidget(
-                        Theme.of(context)
-                            .textTheme
-                            .subtitle2!
-                            .copyWith(fontWeight: FontWeight.bold),
-                        title,
-                        TextAlign.center,
-                        getPercentSize(remainHeight, 11)),
+                    Expanded(child: Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: getWidthPercentSize(context, 3),
+                      ),
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: getTextWidget(
+                            Theme.of(context)
+                                .textTheme
+                                .subtitle2!
+                                .copyWith(fontWeight: FontWeight.bold),
+                            title,
+                            TextAlign.center,
+                            getPercentSize(remainHeight, 11)),
+                      ),
+                    ),),
                     Opacity(
                       opacity: (gameCategoryType == GameCategoryType.DUAL_GAME)
                           ? 0

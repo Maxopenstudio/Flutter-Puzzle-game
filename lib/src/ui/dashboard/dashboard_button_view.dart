@@ -80,13 +80,20 @@ class DashboardButtonView extends StatelessWidget {
                           ),
                         ),
                         SizedBox(width: getWidthPercentSize(context, 4.5)),
-                        getTextWidget(
-                            Theme.of(context).textTheme.subtitle2!.copyWith(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black),
-                            dashboard.title,
-                            TextAlign.center,
-                            getPercentSize(height, 12))
+                        Expanded(
+                          child: FittedBox(
+                            alignment: Alignment.centerLeft,
+                            fit: BoxFit.scaleDown,
+                            child: getTextWidget(
+                                Theme.of(context).textTheme.subtitle2!.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black),
+                                dashboard.title,
+                                TextAlign.center,
+                                getPercentSize(height, 12)),
+                          ),
+                        ),
+                        SizedBox(width: getWidthPercentSize(context, 4.5)),
                       ],
                     ),
                   ),

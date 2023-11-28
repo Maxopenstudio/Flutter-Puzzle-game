@@ -64,7 +64,7 @@ class CommonInfoDialogView extends StatelessWidget {
                 gameInfoDialog.dec,
                 TextAlign.center,
                 getScreenPercentSize(context, 2),
-                4),
+                6),
           ),
           SizedBox(height: getScreenPercentSize(context, 4)),
           Row(

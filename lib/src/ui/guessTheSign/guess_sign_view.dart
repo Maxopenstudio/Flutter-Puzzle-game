@@ -35,7 +35,7 @@ class GuessSignView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double remainHeight = getRemainHeight(context: context);
-    double height1 = getScreenPercentSize(context, 54);
+    double height1 = getScreenPercentSize(context, 50);
     double mainHeight = getMainHeight(context);
 
     shuffle(list);

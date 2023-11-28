@@ -196,7 +196,7 @@ class _LevelViewState extends State<LevelView> with TickerProviderStateMixin {
                                       margin: EdgeInsets.symmetric(
                                           //     vertical: getPercentSize(height, 12),
                                           horizontal:
-                                              getWidthPercentSize(context, 4)),
+                                              getWidthPercentSize(context, 2)),
                                       padding: EdgeInsets.symmetric(
                                           vertical: getPercentSize(height, 4)),
                                       child: Center(
